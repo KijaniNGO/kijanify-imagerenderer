@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kijanify Image</title>
+</head>
+<body>
+	<form action="http://kijani.co/imagerenderer/img.php" method="GET" style="margin: 100px auto; width: 300px">
+		<h2>Kijanify Image</h2>
+		<br>
+		<br>
+		<label for="imgurl">
+			URL of image
+		</label>
+		<br>
+		<input type="url" name="imgurl" id="imgurl" value="http://blog.kijani.co/wp-content/uploads/2014/12/2014-12-05-A-Research-Grant-and-Dedication-to-a-Landscape.jpg">
+
+		<br>
+		<br>
+		<label for="title">
+			title to put in image
+		</label>
+		<br>
+		<input type="text" name="title" id="title" value="A Research Grant and Dedication to a Landscape">
+
+		<br>
+		<br>
+		<label for="width">
+			width of output image
+		</label>
+		<br>
+		<input type="number" name="width" id="width" step="50" value="800">
+
+		<br>
+		<br>
+		<label for="type">
+			file type of output image
+		</label>
+		<br>
+		<input type="radio" name="type" id="type" value="jpg" checked> JPG
+		<input type="radio" name="type" value="png"> PNG
+
+		<br>
+		<br>
+		<label for="qual">
+			quality of output image
+		</label>
+		<br>
+		<input type="range" name="qual" id="qual" min="0" max="100" step="10" value="80">
+
+
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
